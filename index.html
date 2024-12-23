@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Shravani Gurram Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar" style="background-color: black;">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">Shravani Gurram</a>
+			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
+	
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav nav ml-auto">
+					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+					<li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
+					<li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_removed_shravnipic.png);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Shravani Gurram</span></h1>
+
+						<!-- Element to contain animated typing -->
+                        <span id="typing-animation"></span>
+
+                        <script>
+                        // Initialize the typing animation
+                        const typingAnimationElement = document.getElementById('typing-animation');
+
+                        // Create an array of typing text
+                        const typingTexts = [
+                           'machine learning',
+                           'backend development',
+                  		   'front-end development',
+ 						   'writing poetry'
+                        ];
+ 
+                        let currentIndex = 0;
+
+                        function playTypingAnimation(text) {
+                        typingAnimationElement.textContent = 'I am good at ';
+
+                        for (let i = 0; i < text.length; i++) {
+                        setTimeout(() => {
+                            typingAnimationElement.textContent += text[i];
+                        }, i * 200);
+                    }
+
+                    setTimeout(() => {
+                    playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+                    }, text.length * 200 + 1000);
+                }
+
+                    // Start the typing animation loop
+                    playTypingAnimation(typingTexts[0]);
+                    </script>
+					<br>
+					<br>
+                    
+					<div class="social-media">
+						<a href="https://www.linkedin.com/in/shravani-gurram-593a9127a/">
+						  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#FFDB08" class="bi bi-linkedin" viewBox="0 0 16 16">
+							<path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+						  </svg>
+						</a>
+						<a href="https://github.com/shravanigurram">
+						  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#FFDB08" class="bi bi-github" viewBox="0 0 16 16">
+							<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+						  </svg>
+						</a>
+						<button class="btn butt" onclick="window.location.href='https://drive.google.com/file/d/1U9XFKwmao9W0x5eyJxavECvXQcQilaBr/view?usp=sharing';" style="background-color: #FFDB08; color: Black;">Download Resume</button>
+					  </div>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">About Me</h1>
+            <h2 class="mb-4">About Me</h2>
+          </div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+			<div class="col-md-6">
+				<div class="resume-wrap ftco-animate">
+					<span class="date">Oct 2024-Present</span>
+					<h2>AI & ML Intern</h2>
+					<span class="position">Infosys Springboard</span>
+					
+					<!-- <p class="mt-4">Merkle, a leading CXM and media company with over 10K+ professionals globally. It's a part of Dentsu International.  -->
+						<ul>
+							<li>Developed a Music Recommendation System utilizing KNN and classification models to deliver personalized suggestions.</li>
+							<li>Designed an intuitive user interface with Streamlit, ensuring seamless interaction and responsiveness.</li>
+							<li>Gained hands-on experience in real-world AI/ML applications, focusing on innovative, user-centric design.</li>
+							<li>Techstack: Python, Pandas, NumPy, Scikit-learn, Machine Learning, and Streamlit, streamlit app, team work and leadership</li>
+						</ul>
+					
+				</div>
+
+			</div>
+
+			<div class="col-md-6">
+				<div class="resume-wrap ftco-animate">
+					<span class="date">June 2024 - July 2024</span>
+					<h2>Research Intern</h2>
+					<span class="position">NIT Warangal</span>
+					<!-- <p class="mt-4">iQuanti is a data-driven digital marketing analytics and solutions company, helps top 100 global brands.  -->
+						<ul>
+							<li>Developed an AI solution using YOLOv9 and YOLOv8 with spatial attention, achieving 85% accuracy in detecting illegally parked vehicles.</li>
+							<li>Improved detection by implementing manual background extraction and advanced classification models.</li>
+							<li>Deployed four optimized models, streamlining the parking violation reporting process.</li>
+							<li>Techstack: Machine Learning, Deep Learning, python, Pandas, numpy, Computer Vision, CUDA, GitHub, Google Colab  </li>
+						</ul>
+					
+				</div>
+
+			</div>
+		</div>
+
+	<br>
+	<br>
+
+	<div class="row">
+		<h1 class="big-4">Education</h1>
+		<div class="underline"></div>
+		<br>
+		<br>
+	</div>
+	<br>
+	
+		<div class="row">
+			<div class="col-md-6">
+				<div class="resume-wrap ftco-animate">
+					<span class="date">2022-2026</span>
+					<h2>Bachelor of Engineering</h2>
+					<span class="position">SR University</span>
+					<p class="mt-4">CGPA: 9.71</p>
+					<h6> CourseWork:</h6>
+					<ul>
+						<li>Data Structures and Algorithms through Python</li>
+						<li>Design and Analysis of Algorithms</li>
+						<li>Operating Systems</li>
+						<li>Database Management Systems</li>
+						<li>Computer Networks</li>
+						<li>Artificial Intelligence & Machine Learning</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="resume-wrap ftco-animate">
+					<span class="date">2020-2022</span>
+					<h2>Higher Secondary School</h2>
+					<span class="position">SR Prime Junior College</span>
+					<p class="mt-4">Percentage: 97.2</p>
+				</div>
+			</div>
+		</div>
+		<br>
+		<br>
+		<div class="underline"></div> 
+        </div>
+    </section>
+    
+
+	<section class="ftco-section" id="skills-section">
+		<div class="container">
+		  <div class="row justify-content-center mb-5 pb-5">
+			<div class="col-md-7 heading-section text-center ftco-animate">
+			  <h1 class="big big-2">Skills</h1>
+			  <h2 class="mb-4">Skills</h2>
+			  
+			</div>
+		  </div>
+	  
+		  <!-- Programming Languages Section -->
+		  <div class="row mb-4"> 
+			<div class="col-md-12">
+			  <h3 class="text-center mb-3">Programming Languages</h3>
+			  <div class="d-flex justify-content-center">
+				<img src="images/c_logo.png" alt="C" class="img-fluid mx-2" style="width: 80px; height: 80px;">
+				<img src="images/python.jpeg" alt="Python" class="img-fluid mx-2" style="width: 80px; height: 80px;">
+				<img src="images/java_logo.png" alt="Java" class="img-fluid mx-2" style="width: 80px; height: 80px;">
+				<img src="images\JS_logo.png" alt="JavaScript" class="img-fluid mx-2" style="width: 80px; height: 80px;">
+				<img src="images/html.png" alt="HTML" class="img-fluid mx-2" style="width: 80px; height: 80px;">
+				<img src="images\css.png" alt="CSS" class="img-fluid mx-2" style="width: 80px; height: 80px;">
+			  </div>
+			</div>
+		   </div> 
+
+		<!-- Frameworks Section -->
+		<div class="row mb-4">
+			<div class="col-md-12">
+			  <h3 class="text-center mb-3">Frameworks</h3>
+			  <div class="d-flex justify-content-center">
+				<img src="images\django.jpeg" alt="Django" class="img-fluid mx-2" style="width: 80px; height: 80px;">
+				<img src="images\react_logo.jpeg" alt="React" class="img-fluid mx-2" style="width: 80px; height: 80px;">
+				<img src="images\git_icon.png" alt="Gitr" class="img-fluid mx-2" style="width: 80px; height: 80px;">
+				<img src="images\tensorflow_icon.png" alt="Tensorflow" class="img-fluid mx-2" style="width: 80px; height: 80px;">
+				<img src="images\bootstrap_icon.jpeg" alt="Bootstrap" class="img-fluid mx-2" style="width: 80px; height: 80px;">
+				<img src="images\flask_icon.png" alt="Flask" class="img-fluid mx-2" style="width: 80px; height: 80px;">
+				<img src="images\nodejs.png" alt="Node js" class="img-fluid mx-2" style="width: 80px; height: 80px;">
+				
+			  </div>
+			</div>
+		  </div>  
+		 <!-- Database Section -->
+		 <div class="row mb-4">
+			<div class="col-md-12">
+			  <h3 class="text-center mb-3">Database & Tools</h3>
+			  <div class="d-flex justify-content-center">
+				<img src="images/mysql_logo.png" alt="MySQL" class="img-fluid mx-2" style="width: 80px; height: 80px;">
+				<img src="images/mangodb.jpeg" alt="MangoDB" class="img-fluid mx-2" style="width: 80px; height: 80px;">
+				<img src="images/oracle.png" alt="Oracle" class="img-fluid mx-2" style="width: 80px; height: 80px;">
+				<img src="images/github.png" alt="GitHub" class="img-fluid mx-2" style="width: 80px; height: 80px;">
+			  </div>
+			</div>
+		  </div>  
+		
+		 <!-- Domain Section -->
+		 <div class="row mb-4">
+			<div class="col-md-12">
+			  <h3 class="text-center mb-3">Domain</h3>
+			  <div class="d-flex justify-content-center">
+				<img src="images/datascience.jpeg" alt="Data Science" class="img-fluid mx-2" style="width: 80px; height: 80px;">
+				<img src="images/ml_logo.png" alt="Machine Learning" class="img-fluid mx-2" style="width: 80px; height: 80px;">
+				<img src="images/asure_logo.png" alt="Azure" class="img-fluid mx-2" style="width: 80px; height: 80px;">
+				<img src="images/aws_logo.png" alt="aws" class="img-fluid mx-2" style="width: 80px; height: 80px;">
+
+			  </div>
+			</div>
+		  </div>  
+		  <br>
+		  <br>
+		  <br>
+		  <div class="underline"></div> 
+		</div>
+	  </section>		
+
+    
+<section class="ftco-section" id="project-section">
+	<div class="container">
+	  <div class="row justify-content-center mb-5 pb-5">
+		<div class="col-md-7 heading-section text-center ftco-animate">
+		  <h1 class="big big-2">Projects</h1>
+		  <h2 class="mb-4">Projects</h2>
+		</div>
+	  </div>
+	  <div id="projectCarousel" class="carousel slide" data-ride="carousel">
+		<div class="carousel-inner">
+	
+		  <!-- Project 1 -->
+		  <div class="carousel-item active">
+			<div class="row d-flex justify-content-center">
+			  <div class="col-md-6 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				  <a href="https://github.com/shravanigurram/spotify_recommendation_system" class="block-20 zoom-effect" style="background-image: url('images/musiclogo.png');"></a>
+				  <div class="text mt-3 float-right d-block">
+					<h3 class="heading">Spotify Music Recommendation System</a></h3>
+					<p> Developed a music recommendation system using KNN and StandardScaler 
+						to recommend tracks based on genre, artist, and track preferences, deployed on Streamlit for real-time interaction.</p>
+						<h6> Techstack</h6>
+						<ul>
+							<li>Python, KNN, Logistic Regression, Classification models, Scikit-learn, Pandas, NumPy, StandardScaler, Streamlit</li>
+							<li>IDE: VS code, Google Colab</li>
+							
+						</ul>	
+					<!-- Buttons for Code and Live Demo -->
+					<a href="https://github.com/shravanigurram/spotify_recommendation_system" class="btn" target="_blank">Code</a>
+					<a href="https://spotifymusicrecommendation.streamlit.app/" class="btn" target="_blank">Live Demo</a> <!-- Replace with your live demo URL -->
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+	
+		  <!-- Project 2 -->
+		  <div class="carousel-item">
+			<div class="row d-flex justify-content-center">
+			  <div class="col-md-6 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				  <a href="https://github.com/shravanigurram/projects/blob/main/final_illegal_parking_yolov9.ipynb" 
+				  class="block-20 zoom-effect" style="background-image: url('images/illegal.jpeg');"></a>
+				  <div class="text mt-3 float-right d-block">
+					<h3 class="heading">Illegal Parking Detection</a></h3>
+					<p>Developed a parking detection system using attention-enhanced YOLOv8 and YOLOv9 models to differentiate between
+						 legal and illegal parking from drone-captured data, optimized for real-time smart city applications</p>
+						 <h6>Techstack:</h6>
+						 <ul>
+							 <li>Python, Deep Learning YOLOv8, YOLOv9, Attention Mechanism, TensorFlow, Drone Data, Smart City Infrastructure.</li>
+							 <li>IDE Google Colab</li>
+							 
+						 </ul>	 
+					
+						 <!-- Buttons for Code and Live Demo -->
+					<a href="https://github.com/shravanigurram/projects/blob/main/final_illegal_parking_yolov9.ipynb" class="btn" target="_blank">Python Code</a>
+					<!-- <a href="http://your-demo-link.com" class="btn" target="_blank">Live Demo</a>  -->
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+
+		  
+		  <!-- Project 3 heart attack prediction -->
+		  <div class="carousel-item">
+			<div class="row d-flex justify-content-center">
+			  <div class="col-md-6 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				  <a href="https://github.com/shravanigurram/projects/blob/main/heartattack_prediction.ipynb" 
+				  class="block-20 zoom-effect" style="background-image: url('images/heart.webp');"></a>
+				  <div class="text mt-3 float-right d-block">
+					<h3 class="heading">Heart Attack Prediction</a></h3>
+					<p>Developed a heart attack prediction system using the CardioRisk dataset, employing machine learning models like SVM, 
+						Logistic Regression, and KNN to predict cardiovascular risk based on patient medical and demographic data. T</p>
+						 <h6>Techstack:</h6>
+						 <ul>
+							 <li>Python, Machine Learning, SVM, Perceptron Model, Bootstrapping, Model Evaluation, Scikit-learn, Pandas, NumPy.</li>
+							 <li>IDE Google Colab</li>
+							 
+						 </ul>	 
+					
+						 <!-- Buttons for Code and Live Demo -->
+					<a href="https://github.com/shravanigurram/projects/blob/main/heartattack_prediction.ipynb" class="btn" target="_blank">Python Code</a>
+					<!-- <a href="http://your-demo-link.com" class="btn" target="_blank">Live Demo</a>  -->
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+	
+		  <!-- Add additional projects here -->
+	
+		</div>
+	
+		<!-- Carousel Controls -->
+		<a class="carousel-control-prev" href="#projectCarousel" role="button" data-slide="prev">
+		  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		  <span class="sr-only">Previous</span>
+		</a>
+		<a class="carousel-control-next" href="#projectCarousel" role="button" data-slide="next">
+		  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		  <span class="sr-only">Next</span>
+		</a>
+	  </div>
+	  <br>
+	  <br>
+	  <br>
+	  <div class="underline"></div> 
+	</div>
+  </section>
+	
+  <!-- jQuery, Popper.js, and Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	
+  <script>
+	$(document).ready(function () {
+	  $('#projectCarousel').carousel({
+		interval: 5000, // Auto-slide interval (set to false for manual only)
+		pause: 'hover', // Pause auto-slide on hover
+	  });
+	});
+  </script>
+  
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        
+          		
+
+		<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+			<li class="ftco-animate normal-txt">Connect Me through</li>
+			<li class="ftco-animate"><a href="https://www.linkedin.com/in/shravani-gurram-593a9127a/"><span class="icon-linkedin"></span></a></li>  
+			<li class="ftco-animate"><a href="https://github.com/shravanigurram"><span class="icon-github"></span></a></li>
+			<li class="ftco-animate"><a href="https://wa.me/919381008049"><span class="icon-whatsapp"></span></a></li>
+			<li class="ftco-animate"><a href="https://www.instagram.com/_phoenixsoul04/"><span class="icon-instagram"></span></a></li>
+			<li class="ftco-animate"><a href="mailto:shravanigurram04.com"><span class="icon-paper-plane"></span></a></li>
+			
+
+		  </ul>
+	  <br>
+	  
+ </div>
+</div>
+</section> 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  
+	<!-- Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+</p> -->
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
